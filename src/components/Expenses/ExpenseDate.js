@@ -1,4 +1,4 @@
-// Write your code here
+import React from 'react';
 import './ExpenseDate.css';
 
 const months = [

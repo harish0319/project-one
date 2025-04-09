@@ -9,10 +9,14 @@ const App = () => {
     { id: "4", date: new Date(2023, 1, 14), location:"Mumbai",title: "Laptop", price: 200 },
   ];  
 
+  const getExpenseDataHandler = (expense) => {
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense/>
-      <Expenses expenses={expenses}/>
+      <NewExpense onGetExpenseData={getExpenseDataHandler} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
